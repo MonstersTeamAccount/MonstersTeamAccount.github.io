@@ -9,11 +9,8 @@
 
 .button {
     border-radius: 4px;
-   background: rgb(14,131,22);
-background: -moz-linear-gradient(90deg, rgba(14,131,22,1) 23%, rgba(14,131,22,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(14,131,22,1) 23%, rgba(14,131,22,1) 100%);
-background: linear-gradient(90deg, rgba(14,131,22,1) 23%, rgba(14,131,22,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e8316",endColorstr="#0e8316",GradientType=1);;
+   background-color: #00FF0C;
+
     border: none;
     color: #FFFFFF;
     text-align: center;
