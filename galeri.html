@@ -1,102 +1,80 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
-   body {
-background: rgb(110,10,152);
-background: -moz-linear-gradient(90deg, rgba(110,10,152,1) 23%, rgba(27,246,255,1) 83%);
-background: -webkit-linear-gradient(90deg, rgba(110,10,152,1) 23%, rgba(27,246,255,1) 83%);
-background: linear-gradient(90deg, rgba(110,10,152,1) 23%, rgba(27,246,255,1) 83%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6e0a98",endColorstr="#1bf6ff",GradientType=1);
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: 100% 100%;
-        }
-	       .orta{
-        width: 800px;
-        height: 1500px;
-    
-        background: rgb(87,152,10);
-background: -moz-linear-gradient(90deg, rgba(87,152,10,1) 23%, rgba(21,116,50,1) 83%);
-background: -webkit-linear-gradient(90deg, rgba(87,152,10,1) 23%, rgba(21,116,50,1) 83%);
-background: linear-gradient(90deg, rgba(87,152,10,1) 23%, rgba(21,116,50,1) 83%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57980a",endColorstr="#157432",GradientType=1);;
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
-        margin: 5px auto;
-      }
-      .biyo{
-  text-align: center;
-  position: absolute;
-  top: 250px;
-  left: 670px ;
-  transform: translate(-50%,-50%);
-  color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #e5e5e5;
+}
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
   float: left;
-  width: 180px;
-
+  padding: 5px;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
+.gallery > div:hover {
+  z-index: 1;
 }
 
-div.desc {
-  padding: 15px;
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
   text-align: center;
 }
 </style>
-  <meta charset="utf-8">
-<meta name="viewport"content="with=device-with,inital-scale=1">
-<title>MONSTERs Galeri</title>
-<link rel="stylesheet" href="main.css">
+
+
 </head>
 <body>
-<div id = anasa>
-	 <button  class="button"  onclick="window.location.href='index.html'"> <span>Ana Sayfa</span>  </button>
-	
-	
-	</div>
- <div class = "orta">
-        <div class="bolum">
-
-            <div id = ahmetbas>
-                <h1 style="font-size: 400%;">Galeri</h1>
-                
-                
-
-          </div>
-          <div class="biyo">    
-            
-            <div class="gallery">
   
-        <img src="mon.jpg" alt="img" width="600" height="400">
-             
-       <div class="desc">MONSTERs</div>
-        </div>
-		           <div class="gallery">
+
+<div class="gallery cf">
+  <div>
+    <img src="mon.jpg" />
+  </div>
+ 
   
-        <img src="test.jpg" alt="img" width="600" height="400">
-             
-       <div class="desc">test</div>
-        </div>
-
-          
-        
-        </div>
-          
-        </div>     
-
-
-
-
+</div>
 </body>
 </html>
